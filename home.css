@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #00b8e6;
+    height: 100px;
+    width: 100vw;
+    padding: 5px 4vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid black;
+}
+
+header section.isologotipo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+
+}
+
+header section.isologotipo div.logo {
+    padding:5px;
+    width: 40%;   
+}
+
+header section.isologotipo div.logo img {
+    height: 80px;
+}
+
+header section.navegacion {
+    width: 69%;
+}
+
+header section.navegacion div.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 49%;
+}
+
+header section.navegacion div.encabezado div.usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5px;
+}
+
+header section.navegacion div.encabezado div.carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+}
+
+header section.navegacion div.encabezado div.usuario a,
+header section.navegacion div.encabezado div.carrito a {
+    font-size: 20px;
+    color: white;
+
+}
+
+header section.navegacion nav {
+    display:flex;
+    height: 49%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header section.navegacion nav ul{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    list-style: none;
+}
+
+header section.navegacion nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 10px;
+    text-shadow: 1px 1px 0 #AAA;   
+}
+
+header section.navegacion nav ul li a:hover {
+    color: #0044aa;
+}
+
+header section.navegacion nav ul li.subLogin ul.children {
+    display: none;
+    position: absolute;
+}
+
+header section.navegacion nav ul li.subLogin:hover ul.children {
+    display: block;
+}
+
+header section.navegacion nav ul li.subLogin ul.children li {
+    background-color:#66e0ff;
+    margin: 0px;
+    padding: 5px 0px;
+    position: relative;
+}
+.navegacion .encabezado .usuario a {
+    text-decoration: none;
+}
+.navegacion .encabezado .usuario a#nombre {
+    font-size: 16px;
+    color: black;
+}
+.navegacion .encabezado .usuario ul {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 70px;
+}
+.navegacion .encabezado .usuario:hover ul {
+    display: block;
+}
+.navegacion .encabezado .usuario ul.perfil li {
+    background-color:#66e0ff;
+    padding: 5px 10px;
+}
+.navegacion .encabezado .usuario ul.perfil li a {
+    font-size: 16px;
+}
+.navegacion .encabezado .usuario ul.perfil li a:hover {
+    color: #0044aa;
+}
+
+.icon-burger {
+    display:none;
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px){
+    .brand{
+        display: none;
+    }
+
+    .icon-burger{
+        display: block;
+    }
+
+    .show{
+        bottom: 250px!important;
+        padding-bottom: 50px;
+    }
+
+    header section.navegacion nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(0,0,0,.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    header section.navegacion nav .links a {
+        font-size: 20px;
+        text-shadow: 1px 1px 0 rgb(125, 129, 179);
+        
+    }
+
+    header section.navegacion nav ul li.subLogin ul.children li {
+        background-color: rgba(0,0,0,0);
+        font-weight: 500;
+        padding-left: 30px;
+    }
+    
+
+
+
+}
