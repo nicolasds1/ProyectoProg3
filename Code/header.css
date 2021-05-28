@@ -9,6 +9,7 @@ header {
     position: fixed;
     z-index: 100;
     border-bottom: 1px solid black;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .links_navbar{
@@ -20,12 +21,13 @@ header section.isologotipo {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-    width: 30%;
+    width: 35%;
 
 }
 
 .brand{
     margin-left: 5px;
+    
 }
 
 header section.isologotipo div.logo {
@@ -123,6 +125,10 @@ header section.navegacion nav ul li a:hover {
         overflow: hidden;
         transition: all .5s ease-in-out;
     }
+
+    
+        
+    
 
     header section.navegacion nav .links a {
         font-size: 20px;
