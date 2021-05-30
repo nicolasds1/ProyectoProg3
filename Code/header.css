@@ -8,8 +8,12 @@ header {
     flex-direction: row;
     position: fixed;
     z-index: 100;
-    border-bottom: 1px solid black;
     font-family: 'Varela Round', sans-serif;
+}
+
+ul .links{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .links_navbar{
@@ -26,8 +30,7 @@ header section.isologotipo {
 }
 
 .brand{
-    margin-left: 5px;
-    
+    margin-left: 15px;
 }
 
 header section.isologotipo div.logo {
@@ -97,9 +100,8 @@ header section.navegacion nav ul li a:hover {
 
 @media (max-width: 768px){
     .brand{
-        display: none;
+        font-size: small;
     }
-
     .icon-burger{
         display: block;
     }
