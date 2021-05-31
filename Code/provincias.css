@@ -1,0 +1,48 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+
+h1{
+    align-self: center;
+    top: 0;
+}
+
+#provincias{
+    margin-top: 105px;
+
+    display:grid;
+    grid-template-columns: 375px 375px 375px 375px;
+}
+
+
+
+div.provincia{
+    width:350px!important;
+    height: 500px!important;
+    display: flex;
+    padding: 3%;
+    flex-direction: column;
+    width: 33%;
+    justify-content: flex-start;
+    border: black 3px solid;
+    margin-top: 100px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(219, 215, 215);
+    background-color: rgba(0,0,0,0.7);
+    height:100%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: 0.9;
+    flex-wrap: wrap;
+}

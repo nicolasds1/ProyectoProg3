@@ -1,7 +1,9 @@
 header {
+    left:0;
+    top:0;
     background-color: #fc6500;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     padding: 5px 4vw;
     display: flex;
     flex-wrap: nowrap;

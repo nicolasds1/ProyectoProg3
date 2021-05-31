@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="provincias.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <title>Mapa Interactivo</title>
+    <link rel="stylesheet" href="header.css">
+    <title>Provincias</title>
 </head>
 <body>
     <header>
@@ -22,12 +23,11 @@
         </section>
     
         <section class="navegacion">
-    
             <nav>
                 <ul class="links">
                     <li><a class="links_navbar" href="../Code/Mapa.html">Mapa Interactivo</a></li>
                     <li><a class="links_navbar" href="/instituciones">Encuesta</a></li>
-                    <li><a class="links_navbar" href="/nosotros">Nosotros</a></li>
+                    <li><a class="links_navbar" href="../Code/provincias.html">Provincias</a></li>
                 </ul>
             </nav>
             <label for="nav-toggle" class="icon-burger">
@@ -37,6 +37,30 @@
             </label>
         </section>
     </header>
-    <iframe src="https://sinia.ambiente.gob.ar/geovisor.php?tid=6&stid=23,6&lyid=4,100004,100002" width="1550px" height="1550px" style="border:0; margin-top: 100px;" allowfullscreen="yes" ></iframe>
+    <div id="provincias"></div>
+
+    <script>
+        function cargarProvincias(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange= function(){
+                if(this.readyState==4 && this.status==200){
+                    myFunction(this);
+                }
+            };
+            xmlhttp.open("GET", "https://apis.datos.gob.ar/georef/api/provincias")
+            xmlhttp.send();
+        }
+        function myFunction(xmlhttp){
+            var json= JSON.parse(xmlhttp.responseText)
+            var div=""
+            for (var i=0; i<json.provincias.length ;i++){
+                div+="<div class=provincia><h1>"+ json.provincias[i].nombre+"</h1><p>Latitud: "+ json.provincias[i].centroide.lat+"<br>Longitud: "+ json.provincias[i].centroide.lon+"</p></div>";
+                document.getElementById("provincias").innerHTML= div;
+            }
+        }
+        window.onload=cargarProvincias;
+    </script>
+
+    
 </body>
 </html>
