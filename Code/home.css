@@ -44,7 +44,7 @@ body{
     background-size: cover;
     border-bottom: 3px solid black;
     box-shadow: 5px black;
-  }
+}
 
 .parallax::before{
     content:'';
@@ -100,9 +100,16 @@ body{
     background-image: url(/Imgs/3.jpg);
 }
 
+iframe{
+    align-self: center;
+}
 @media (max-width: 768px){
     .textoParallax{
         font-size: 20px;
         margin-left: 25px;
+    }
+    iframe{
+        width: 700px;
+        height: 700px;
     }
 }
