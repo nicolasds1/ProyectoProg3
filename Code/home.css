@@ -78,11 +78,40 @@ body{
     background-size: cover;
     background-blend-mode: darken;
     opacity: 0.9;
+    
+    
 }
 
+.frente{
+    transform: perspective(600px) rotateY(0deg);
+}
+.atras{
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+.frente,.atras{
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+}
+.regionHome:hover > .frente{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.regionHome:hover > .atras{
+    transform: perspective(600px) rotateY(0deg);
+}
 .tituloRegion{
     align-self: center;
     padding-bottom: 5%;
+}
+.atrascontent a{
+    display: flex;
+    font-size:20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
 }
 
 .infoArgentinaClimas{
