@@ -69,7 +69,6 @@ body{
     border-radius: 10px;
     background-color: rgb(219, 215, 215);
     background-color: rgba(0,0,0,0.7);
-    height:100%;
     display: flex;
     color: white;
     justify-content: center;
