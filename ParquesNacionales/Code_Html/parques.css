@@ -13,12 +13,11 @@ body{
 }
 .img-slider{
     position:relative;
-    width: 800px;
-    height:800px;
+    width: 60%;
+    height: 900px;
     margin: 10px;
     background: lightgrey;
     padding: 7%;
-    margin-top: 150px !important;
     border-radius: 20px;
 }
 .img-slider .slides{

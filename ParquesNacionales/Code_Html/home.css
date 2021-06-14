@@ -119,13 +119,13 @@ body{
 }
 
 #Norte{
-    background-image: url(/Imgs/1.jpg);
+    background-image: url(/Imgs_web/1.jpg);
 }
 #Sur{
-    background-image: url(/Imgs/2.JPG);
+    background-image: url(/Imgs_web/2.JPG);
 }
 #Centro{
-    background-image: url(/Imgs/3.jpg);
+    background-image: url(/Imgs_web/3.jpg);
 }
 
 iframe{
