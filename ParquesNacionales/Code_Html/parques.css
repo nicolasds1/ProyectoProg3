@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1D212B;
+    background-color: rgb(235, 231, 231);
+    
   }
   
   .img-slider{
@@ -50,9 +51,9 @@
   }
   
   .img-slider .navigation .btn{
-    background: rgba(255, 255, 255, 0.5);
-    width: 12px;
-    height: 12px;
+    background: rgba(49, 49, 49, 0.5);
+    width: 20px;
+    height: 20px;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -72,7 +73,7 @@
 
   
     .img-slider .navigation{
-      bottom: 400px;
+      top: -30px;
     }
   
     .img-slider .navigation .btn{
@@ -90,12 +91,12 @@
 
   
     .img-slider .navigation{
-      bottom: 15px;
+      bottom: 270px;
     }
   
     .img-slider .navigation .btn{
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       margin: 6px;
     }
   }
