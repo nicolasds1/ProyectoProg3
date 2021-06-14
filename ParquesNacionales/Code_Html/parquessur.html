@@ -55,7 +55,7 @@
             <img src ="../FICHAS_Info/PATAGONIA/los_alerces.jpeg">
         </div>
         <div class = "slide">
-            <img src ="../FICHAS_Info/PATAGONIA/los_alerces.jpeg">
+            <img src ="../FICHAS_Info/PATAGONIA/lihue_calel.jpeg">
         </div>
         <div class = "slide">
             <img src ="../FICHAS_Info/PATAGONIA/los_arrayanes.jpeg">
@@ -107,28 +107,6 @@
             <div class = "btn"></div>
         </div>
     </div>
-    <script type="text/javascript">
-    var slides = document.querySelectorAll('.slide');
-    var btns = document.querySelectorAll('.btn');
-    let currentSlide = 1;
-
-    var manualNav = function(manual){
-        slides.forEach((slide) => {
-            slide.classList.remove('active');
-
-            btns.forEach((btn) => {
-                btn.classList.add('active');
-            });
-        });
-        slides[manual].classList.add('active');
-        btns[manual].classList.add('active');
-        }
-    btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-            manualNav(i);
-            currentSlide = i;
-        });
-    });
-    </script>
+    <script src="SlideParques.js"></script>
 </body>
 </html>
