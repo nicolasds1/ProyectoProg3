@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ParquesNacionales/src/main/java"/>
+	<classpathentry kind="src" path="ParquesNacionales/src/test/java"/>
+	<classpathentry kind="lib" path="ParquesNacionales/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.5.0/64c7bbc941c70895621ed613f38dc66b73ea9341/spring-boot-autoconfigure-2.5.0.jar" sourcepath="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.5.0/56361cf7592e27bacb689767be065db6e31ca95e/spring-boot-autoconfigure-2.5.0-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.8/daa288e67b0f2e09a033500d5ce8406677c5045c/spring-web-5.3.8.jar" sourcepath="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.8/f276ec68dc468ec216a203b0971981454b85eb64/spring-web-5.3.8-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.5.1/eb046cc9d226cb8ab131283c526d132ba71ed39c/spring-boot-2.5.1.jar" sourcepath="C:/Users/Alexis/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.5.1/4a4da6c3c157113ee760270f5e073d054214e017/spring-boot-2.5.1-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

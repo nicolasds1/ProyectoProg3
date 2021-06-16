@@ -36,7 +36,7 @@
             </label>
         </section>
     </header>
-    <form >
+    <form method="POST" th:action="@{/obtenerResultados}">
         <section class="encabezado_encuesta">
             <h1>Parques Nacionales</h1>
             <h3>Responde este cuestionario sobre parques nacionales</h3>
@@ -46,8 +46,8 @@
             <label class="pregunta">¿Sabes lo que es un Parque Nacional?</label>
             <br>
             <div style="width: 100%;display: flex;justify-content: center;">
-                <input class="radio_button" type="radio" name="P1">Si
-                <input class="radio_button" type="radio" name="P1">No
+                <input class="radio_button" id="Si" type="radio" name="P1">Si
+                <input class="radio_button" id="No" type="radio" name="P1">No
             </div>
 
 
