@@ -2,7 +2,7 @@ package ar.edu.ub.parquesnacionales.Model;
 
 
 import javax.persistence.*;
-import java.awt.*;
+
 
 
 @Entity

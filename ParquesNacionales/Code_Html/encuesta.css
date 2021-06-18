@@ -11,9 +11,7 @@ body{
     background-color: rgb(248, 247, 247);
     width: 100vw;
     justify-content: center;
-    background-image: url(/Imgs_web/fondo_encuesta.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
    
 }
 
@@ -45,6 +43,9 @@ form{
     height: fit-content;
     background-color: transparent;
     color: white;
+    background-image: url(../Imgs_web/fondo_encuesta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 
 }
@@ -87,4 +88,14 @@ hr{
     width: 100%;
     margin: 5px 5px;
     padding: 10px 10px;
+}
+input[type=submit]{
+    padding: 15px;
+    letter-spacing: 1px;
+    font-family: 'Varela Round', sans-serif;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    
 }
